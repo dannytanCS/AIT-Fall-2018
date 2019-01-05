@@ -1,0 +1,50 @@
+.heading {
+    color: skyblue;
+}
+
+.error {
+    width: 100%;
+    background-color: lightcoral;
+    text-align: center;
+    font-weight: bold;
+}
+
+.title {
+    text-align: center;
+}
+
+.right {
+    float: right;
+    padding: 0 5px;
+}
+
+.left {
+    float: left;
+    padding: 0 5px;
+}
+
+.nav {
+    background-color: lightblue;
+}
+
+.sub {
+    font-style: italic;
+}
+
+img {
+    width: 800px;
+    height: 600px;
+}
+
+nav {
+    width: 100%;
+    height: 40px;
+}
+
+.course {
+    height: 45px;
+}
+
+.body {
+    padding: 20px;
+}

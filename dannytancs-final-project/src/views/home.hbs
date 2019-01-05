@@ -1,0 +1,15 @@
+<h4 class="heading">Courses</h4>
+
+
+{{#if message}}
+<div class="error">{{ message }}</div>
+{{/if}}
+
+{{#each courses as |course|}}
+<div class="course">
+    <a href="/courses/{{_id}}" id="{{courseNumber}}{{name}}{{date}}">{{courseNumber}} {{name}} {{date}}</a>
+    <form method="GET" action='/delete/courses/{{_id}}' class="form-inline right">
+        <button type="submit" id="{{courseNumber}}{{name}}{{date}}delete" class="btn btn-danger">Delete</button>
+    </form>
+</div>
+{{/each}}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css" />
+    <title>NoteShare</title>
+</head>
+
+<body>
+    <h2 class="heading">NoteShare</h2>
+
+    <nav>
+        {{#if user}}
+        <form method="POST" action='/logout' id = "logout" class="form-inline right">
+            <button type="submit" class="btn btn-danger">Logout</button>
+        </form>
+
+        <form method="GET" action='/' class="form-inline left">
+            <button type="submit" class="btn btn-info">Home</button>
+        </form>
+
+        <form method="GET" action='/myprofile' class="form-inline left">
+            <button type="submit" class="btn btn-info">My Profile</button>
+        </form>
+
+        <form method="GET" action='/add' class="form-inline left">
+            <button type="submit" id="addNotes" class="btn btn-info">Add Notes</button>
+        </form>
+
+        <form method="GET" action='/delete' class="form-inline left">
+            <button type="submit" class="btn btn-info">Delete Courses/Notes</button>
+        </form>
+    </nav>
+    {{/if}}
+
+    <div class="body">
+        {{{body}}}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+<h4 class="heading">Added Courses:</h4>
+
+{{#each courses as |course|}}
+<div class="course">
+    <a href="/courses/{{_id}}">{{courseNumber}} {{name}} {{date}}</a>
+    <form method="GET" action='/myprofile/delete/courses/{{_id}}' class="form-inline right">
+        <button type="submit" id ="{{courseNumber}}{{name}}{{date}}delete" class="btn btn-danger">Delete</button>
+    </form>
+</div>
+{{/each}}

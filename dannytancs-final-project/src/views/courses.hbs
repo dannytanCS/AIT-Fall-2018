@@ -1,0 +1,17 @@
+<form method="GET" action='/myprofile/add/courses/{{courseData._id}}' class="form-inline right">
+    <button type="submit" id="addtoProfile" class="btn btn-secondary">Add to profile</button>
+</form>
+
+<h4>Course Number: {{courseData.courseNumber}}</h4>
+<p>Course Name: {{courseData.name}}</p>
+<p>Year: {{courseData.date}}</p>
+<p>Professor: {{courseData.professor}}</p>
+
+
+<ol>
+    {{#each courseData.notes as |note| }}
+    <li>
+        <a href="/courses/{{note.courseId}}/notes/{{note.id}}">{{note.name}}</a>
+    </li>
+    {{/each}}
+</ol>

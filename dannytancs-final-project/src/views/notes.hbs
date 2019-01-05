@@ -1,0 +1,12 @@
+<form method="GET" action='/delete/courses/{{noteData.courseId}}/notes/{{noteData._id}}' class="form-inline right">
+    <button type="submit" class="btn btn-danger">Delete</button>
+</form>
+
+
+<h4>Name: {{noteData.name}}</h4>
+<p>Date Taken: {{noteData.date}}</p>
+<p>Description: {{noteData.desc}}</p>
+
+<img src="data:image/jpeg;base64,{{noteData.file.data}}" alt="{{noteData.name}}">
+
+
