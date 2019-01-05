@@ -1,0 +1,21 @@
+h1 {
+    size: 20px;
+    text-align: center;
+}
+
+.link {
+   text-align: center;
+}
+
+a:hover {
+    color: brown;
+}
+
+a:visited {
+    color: purple;
+}
+
+body {
+    background-color: lightgoldenrodyellow
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>smash keyboard</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <script src="/js/index.js"></script>
+</head>
+
+<body>
+    <h1>FILTERS ARE HERE:</h1>
+    <div id="filtering">
+        <form>
+            length greater than <input type="number" name="lengthGt">
+            length less than <input type="number" name="lengthLt">
+            sentiment greater than <input type="number" name="sentimentGt" step="0.01">
+            sentiment less than <input type="number" name="sentimentLt" step="0.01">
+            date greater than <input type="text" name="dateGt">
+            date less than <input type="text" name="dateLt">
+            <input type="submit" value="filter viewed data"></input>
+        </form>
+    </div>
+
+    <h1>RESULTS ARE HERE</h1>
+    <div id="results"></div>
+
+    <h1>SMASHINGS ARE HERE:</h1>
+    <div id="userInput">
+        smash keyboard here:
+        <form>
+            <textarea name="smashingText"></textarea>
+            <input type="submit" value="send user data"></input>
+        </form>
+    </div>
+</body>
+</html>

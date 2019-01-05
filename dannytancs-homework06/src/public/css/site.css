@@ -1,0 +1,26 @@
+.error {
+    width: 100%;
+    background-color: lightcoral;
+    text-align: center;
+    font-weight: bold;
+}
+
+.heading {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.right {
+    float: right;
+}
+
+.nav {
+    background-color: lightblue;
+}
+
+.sub {
+    font-style: italic;
+}

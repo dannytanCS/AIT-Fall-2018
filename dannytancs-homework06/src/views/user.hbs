@@ -1,0 +1,14 @@
+<h2 class="heading">
+	Welcome to {{username}}'s Page
+</h2>
+
+<ol>
+{{#each articles as |article|}}
+<li>
+<h3> {{article.title}}</h3>
+<a href={{article.url}}> {{article.url}}</a>
+
+<p><span class="sub"> Description:</span> {{article.description}}</p>
+</li>
+{{/each}}
+</ol>

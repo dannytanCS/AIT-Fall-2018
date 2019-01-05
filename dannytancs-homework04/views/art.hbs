@@ -1,0 +1,23 @@
+<h3>
+    artworks
+</h3>
+
+
+<form method="GET" action"/">
+    filter by a tag:
+    <input type="text" name="filter" value="">	
+    <input type="submit">	
+</form>
+
+<ul style="list-style: none;">
+{{#each arts}}
+<li>{{date}}  {{title}}</li>
+<li><pre>{{art}}</pre></li>
+<li>tags:
+    {{#each tags as |tag|}}
+        <a class="tag" href="/?filter={{tag}}"> {{tag}} </a>
+    {{/each}} 
+</li>
+<br>
+{{/each}}
+</ul>

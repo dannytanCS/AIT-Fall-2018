@@ -1,0 +1,23 @@
+* {
+	font-size: 24px;
+	font-family: Helvetica;
+	color: #808080;
+	text-transform: uppercase;
+}
+
+body {
+	background-color: #000000;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+input[type=submit] {
+  color: #000;
+}
+
+.smashingResult {
+  border-bottom: 1px solid white;
+}

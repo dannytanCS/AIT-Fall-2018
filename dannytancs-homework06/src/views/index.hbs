@@ -1,0 +1,8 @@
+<h2 class="heading"> Home Page</h2>
+<ol>
+    {{#each articles}}
+    <div class = "articles">
+        <li><a href={{url}}>{{title}}</a> - <a href="/article/{{slug}}">[details]</a> </li> 
+    </div>
+    {{/each}}
+</ol>

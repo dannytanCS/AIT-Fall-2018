@@ -1,0 +1,42 @@
+<h3>FILTER:</h3>
+
+<form method="GET" action ='/'>
+    <div class="filterOption">
+        WHAT:
+        <input type="text" name="what" value="">
+    </div>
+    <div class="filterOption">
+        WHERE:
+        <input type="text" name="where" value="">
+    </div>
+    <div class="filterOption">
+        DATE:
+        <input type="text" name="date" value="">
+    </div>
+    <div class="filterOption">
+        HOUR:
+        <input type="text" name="hour" value="">
+    </div>
+    <input type="submit" value="FILTER">
+</form>
+
+
+
+<h3>SOUNDS</h3>
+<table>
+    <th>WHAT</th>
+    <th>WHERE</th>
+    <th>DATE</th>
+    <th>HOUR</th>
+    <th>DESCRIPTION</th>
+    {{#each sounds as |sound|}}
+    <tr>
+        <td>{{what}}</td>
+        <td>{{where}}</td>
+        <td>{{date}}</td>
+        <td>{{hour}}</td>
+        <td>{{desc}}</td>
+    </tr>
+    {{/each}}
+</table>
+
